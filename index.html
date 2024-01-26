@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Perfil Profissional</title>
+    <style>
+        body {
+            background-color: rgb(1, 1, 61);
+        }
+        img {
+            width: 30%;
+            height: auto;
+            max-height: 500px;
+            padding: 0px;
+        }
+        .nome {
+            color: bisque;
+            font-size: 5.5rem;
+            padding: 110px;
+        }
+        .navbar {
+            background-color: rgb(1, 1, 61);
+        }
+        p.lead {
+            color: beige;
+            padding-left: 110px;
+        }
+        .jumbotron .lead {
+            color: black;
+            padding: 0px;
+        }
+        .container {
+            padding-left: px;
+        }
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .card {
+            flex: 1 1 calc(33.333% - 10px);
+            max-width: calc(33.333% - 10px);
+        }
+        .card-text {
+            color: black;
+        }
+        button {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a class="navbar-brand" href="#">
+            <span class="nome">Jennefer Kesya Silva</span>
+            <p class="lead">Atualmente estou no segundo período do curso de Análise e Desenvolvimento de Sistemas.</p>
+            <p class="lead">Busco oportunidades de estágio para mostrar as minhas habilidades e crescer como profissional.</p>
+        </a>
+        <img src="./meurosto.png" alt="..." class="rounded-circle border border-secondary">
+        <button type="button" class="btn btn-primary btn-outline-primary" data-toggle="modal" data-target="#ExemploModalCentralizado">
+            Contatos
+        </button>
+        <!-- Modal -->
+        <div class="modal fade" id="ExemploModalCentralizado" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="TituloModalCentralizado">Informações para contato</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Telefone: (81) 9 9661-2561</p>
+                        <p>Email: Jenneferads01@gmail.com</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Áreas de interesse</h1>
+            <p class="lead">Estou disposta a atuar ou tenho conhecimentos nas seguintes áreas:</p>
+            <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action">Front-end</a>
+                <a href="#" class="list-group-item list-group-item-action">Back-end</a>
+                <a href="#" class="list-group-item list-group-item-action">Banco de Dados</a>
+                <a href="#" class="list-group-item list-group-item-action disabled">Licenciatura</a>
+            </div>
+        </div>
+    </div>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Habilidades e Competências</h1>
+            <p class="lead">Habilidades que adquiri ou estou adquirindo em minha formação.</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="card-container">
+            <div class="card border-primary mb-3">
+                <div class="card-body text-primary">
+                    <h5 class="card-title">Inglês</h5>
+                    <p class="card-text">Intermediário.</p>
+                </div>
+            </div>
+            <div class="card border-primary mb-3">
+                <div class="card-body text-primary">
+                    <h5 class="card-title">MySQL</h5>
+                    <p class="card-text">Intermediário.</p>
+                </div>
+            </div>
+            <div class="card border-primary mb-3">
+                <div class="card-body text-primary">
+                    <h5 class="card-title">C#</h5>
+                    <p class="card-text">Básico.</p>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="card border-primary mb-3">
+                    <div class="card-body text-primary">
+                        <h5 class="card-title">C</h5>
+                        <p class="card-text">Intermediário.</p>
+                    </div>
+                </div>
+                <div class="card border-primary mb-3">
+                    <div class="card-body text-primary">
+                        <h5 class="card-title">Banco de Dados</h5>
+                        <p class="card-text">Intermediário.</p>
+                    </div>
+                </div>
+                <div class="card border-primary mb-3">
+                    <div class="card-body text-primary">
+                        <h5 class="card-title">HTML e CSS</h5>
+                        <p class="card-text">Intermediário.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
